@@ -1,4 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // Satellite animation on page load
+    console.log('DOM loaded, starting satellite animation');
+    createSatelliteAnimation();
+    
     // Theme toggle functionality
     const themeToggle = document.getElementById('theme-toggle');
     const themeIcon = document.querySelector('.theme-icon');
@@ -154,3 +158,54 @@ document.addEventListener('DOMContentLoaded', function() {
     // Set initial active state
     updateActiveNav();
 });
+
+// Satellite animation function
+function createSatelliteAnimation() {
+    console.log('createSatelliteAnimation called');
+    const numSatellites = 15;
+    const spacing = 50; // Reduced spacing for mobile
+    
+    // Find the profile section to position satellites relative to it
+    const profileSection = document.querySelector('.profile-section');
+    console.log('Profile section found:', profileSection);
+    if (!profileSection) {
+        console.error('Profile section not found!');
+        return;
+    }
+    
+    console.log('Creating', numSatellites, 'satellites');
+    for (let i = 0; i < numSatellites; i++) {
+        createSatellite(i, spacing, numSatellites, profileSection);
+    }
+}
+
+function createSatellite(index, spacing, numSatellites, profileSection) {
+    console.log('Creating satellite', index);
+    const satellite = document.createElement('div');
+    
+    // Use only satellite emoji for consistency
+    satellite.textContent = '🛰️';
+    satellite.className = 'satellite';
+    
+    // Start satellites in a line across the top, starting further to the left
+    const satelliteX = -200 + (index * spacing); // Position satellites starting from left side
+    
+    // Set position relative to profile section
+    satellite.style.top = '-40px'; // 40px above the profile section
+    satellite.style.left = satelliteX + 'px';
+    satellite.style.animationDuration = '20s'; // Animation duration
+    
+    console.log('Satellite', index, 'positioned at:', satelliteX + 'px', 'top: -40px');
+    
+    // Add to profile section (not body) so it moves with content
+    profileSection.appendChild(satellite);
+    console.log('Satellite', index, 'added to DOM');
+    
+    // Remove satellite after animation completes
+    setTimeout(() => {
+        if (satellite.parentNode) {
+            satellite.parentNode.removeChild(satellite);
+            console.log('Satellite', index, 'removed from DOM');
+        }
+    }, 25000); // Remove after 25 seconds
+}

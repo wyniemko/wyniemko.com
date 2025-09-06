@@ -54,6 +54,7 @@ body {
     gap: 20px;
     margin-bottom: 60px;
     align-items: flex-start;
+    position: relative;
 }
 
 .profile-image {
@@ -600,12 +601,12 @@ body {
 }
 
 [data-theme="dark"] .nav-link {
-    color: #7d8590;
+    color: #c9d1d9;
 }
 
 [data-theme="dark"] .nav-link.active,
 [data-theme="dark"] .nav-link:hover {
-    color: #e6edf3;
+    color: #f0f6fc;
 }
 
 [data-theme="dark"] .theme-toggle {
@@ -619,63 +620,63 @@ body {
 }
 
 [data-theme="dark"] .name {
-    color: #e6edf3;
+    color: #f0f6fc;
 }
 
 [data-theme="dark"] .contact-details {
-    color: #7d8590;
+    color: #c9d1d9;
 }
 
 [data-theme="dark"] .contact-details .contact-link {
-    color: #7d8590;
+    color: #c9d1d9;
 }
 
 [data-theme="dark"] .contact-details .contact-link:hover {
-    color: #e6edf3;
+    color: #f0f6fc;
 }
 
 [data-theme="dark"] .bio {
-    color: #8b949e;
+    color: #c9d1d9;
 }
 
 [data-theme="dark"] .company-name {
-    color: #e6edf3;
+    color: #f0f6fc;
 }
 
 [data-theme="dark"] .time-period {
-    color: #7d8590;
+    color: #c9d1d9;
 }
 
 [data-theme="dark"] .role {
-    color: #8b949e;
+    color: #c9d1d9;
 }
 
 [data-theme="dark"] .role-description {
-    color: #7d8590;
+    color: #c9d1d9;
 }
 
 [data-theme="dark"] .project-link {
-    color: #e6edf3;
+    color: #f0f6fc;
 }
 
 [data-theme="dark"] .project-link:hover {
-    color: #8b949e;
+    color: #c9d1d9;
 }
 
 [data-theme="dark"] .project-description {
-    color: #8b949e;
+    color: #c9d1d9;
 }
 
 [data-theme="dark"] .writing-link {
-    color: #e6edf3;
+    color: #f0f6fc;
 }
 
 [data-theme="dark"] .writing-link:hover {
-    color: #8b949e;
+    color: #c9d1d9;
 }
 
 [data-theme="dark"] .writing-description {
-    color: #8b949e;
+    color: #c9d1d9;
 }
 
 [data-theme="dark"] .footer {
@@ -683,11 +684,11 @@ body {
 }
 
 [data-theme="dark"] .contact-link {
-    color: #e6edf3;
+    color: #f0f6fc;
 }
 
 [data-theme="dark"] .contact-link:hover {
-    color: #8b949e;
+    color: #c9d1d9;
 }
 
 [data-theme="dark"] .modal-content {
@@ -745,4 +746,41 @@ body {
     .tech-name {
         font-size: 10px;
     }
+}
+
+/* Satellite Animation Styles */
+.satellite {
+    position: absolute;
+    font-size: 16px;
+    z-index: 1001;
+    pointer-events: none;
+    animation: satelliteLineFly linear;
+    opacity: 0.7;
+}
+
+@keyframes satelliteLineFly {
+    0% {
+        transform: translateX(-300px);
+    }
+    100% {
+        transform: translateX(calc(100vw + 200px));
+    }
+}
+
+/* Mobile responsive satellites */
+@media (max-width: 768px) {
+    .satellite {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .satellite {
+        font-size: 12px;
+    }
+}
+
+/* Dark mode satellite adjustments */
+[data-theme="dark"] .satellite {
+    opacity: 0.8;
 }
