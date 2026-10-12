@@ -4,197 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brady Wyniemko</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23000'/%3E%3C/svg%3E">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <nav class="navigation">
-            <div class="nav-links">
-                <a href="#work" class="nav-link active">Work</a>
-                <a href="#projects" class="nav-link">Projects</a>
-                <a href="#writing" class="nav-link">Writing</a>
-            </div>
-            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
-                <span class="theme-icon">🌙</span>
-            </button>
-        </nav>
-
-        <main class="main-content">
-            <div class="profile-section">
-                <img src="assets/img/about_me.png" alt="Brady Wyniemko" class="profile-image">
-                <div class="profile-info">
-                    <h1 class="name">Brady Wyniemko</h1>
-                    <p class="contact-details"><a href="https://www.spacex.com/vehicles/starship" target="_blank" class="contact-link">Starbase, TX</a> | <a href="mailto:bwyniemko@gmail.com" class="contact-link">bwyniemko@gmail.com</a></p>
-                    <p class="bio">I develop systems, processes, and analytics for starship, satellite, and gateway supply chain/production operations</p>
-                </div>
-            </div>
-
-            <section id="work" class="work-section">
-                <div class="work-item">
-                    <div class="company-info">
-                        <img src="https://media.licdn.com/dms/image/v2/C560BAQEbqLQ-JE0vdQ/company-logo_200_200/company-logo_200_200/0/1630604387686/spacex_logo?e=1771459200&v=beta&t=Uuh8OZNDNgU6ZbkU9RcZ5TbPLScbPqNkwqij03LM8Vk" alt="SpaceX" class="company-logo" onerror="this.src='https://www.google.com/s2/favicons?domain=spacex.com&sz=256'">
-                        <div class="company-details">
-                            <h3 class="company-name">SpaceX</h3>
-                            <span class="time-period">Aug 2025—Present</span>
-                        </div>
-                    </div>
-                    <p class="role">🚀 Operations Engineer II</p>
-                    <p class="role-description">Building supply chain analytics and full-stack applications for Starship operations.</p>
-                </div>
-
-                <div class="work-item">
-                    <div class="company-info">
-                        <img src="https://media.licdn.com/dms/image/v2/C560BAQEbqLQ-JE0vdQ/company-logo_200_200/company-logo_200_200/0/1630604387686/spacex_logo?e=1771459200&v=beta&t=Uuh8OZNDNgU6ZbkU9RcZ5TbPLScbPqNkwqij03LM8Vk" alt="SpaceX" class="company-logo" onerror="this.src='https://www.google.com/s2/favicons?domain=spacex.com&sz=256'">
-                        <div class="company-details">
-                            <h3 class="company-name">SpaceX</h3>
-                            <span class="time-period">Dec 2023—Aug 2025</span>
-                        </div>
-                    </div>
-                    <p class="role">📡 Operations Engineer</p>
-                    <p class="role-description">Built the platform to deploy and manage thousands of antennas globally.</p>
-                </div>
-
-                <div class="work-item">
-                    <div class="company-info">
-                        <img src="https://media.licdn.com/dms/image/v2/C560BAQEbqLQ-JE0vdQ/company-logo_200_200/company-logo_200_200/0/1630604387686/spacex_logo?e=1771459200&v=beta&t=Uuh8OZNDNgU6ZbkU9RcZ5TbPLScbPqNkwqij03LM8Vk" alt="SpaceX" class="company-logo" onerror="this.src='https://www.google.com/s2/favicons?domain=spacex.com&sz=256'">
-                        <div class="company-details">
-                            <h3 class="company-name">SpaceX</h3>
-                            <span class="time-period">Mar 2023—Dec 2023</span>
-                        </div>
-                    </div>
-                    <p class="role">🛰️ Supply Chain Systems Analyst</p>
-                    <p class="role-description">Engineered facilities and systems for satellite and antenna manufacturing.</p>
-                </div>
-
-                <div class="work-item">
-                    <div class="company-info">
-                        <img src="https://media.licdn.com/dms/image/v2/D560BAQGDLy4STCnHbg/company-logo_200_200/B56ZnZxDipI0AI-/0/1760295142304/amazon_logo?e=1771459200&v=beta&t=iu4qXXua1werp1FIzRC-s8kLPXEm6dSid2L9F5KO-_I" alt="Amazon" class="company-logo" onerror="this.src='https://www.google.com/s2/favicons?domain=amazon.com&sz=256'">
-                        <div class="company-details">
-                            <h3 class="company-name">Amazon</h3>
-                            <span class="time-period">August 2022—March 2023</span>
-                        </div>
-                    </div>
-                    <p class="role">📦 Technical Project Manager</p>
-                    <p class="role-description">Developed Flask/OpenCV web application for conveyor belt failure detection with 98% accuracy and 90% downtime reduction.</p>
-                </div>
-
-                <div class="work-item">
-                    <div class="company-info">
-                        <img src="https://media.licdn.com/dms/image/v2/D560BAQHBmbxCDP0JQQ/company-logo_200_200/B56ZlkdQSaI8AI-/0/1758327015620/meta_logo?e=1771459200&v=beta&t=vKL0FImBRRLRUeBUfzXulim-PRys04ktRmUOR3bH_Kk" alt="Meta" class="company-logo" onerror="this.src='https://www.google.com/s2/favicons?domain=meta.com&sz=256'">
-                        <div class="company-details">
-                            <h3 class="company-name">Meta</h3>
-                            <span class="time-period">May 2022—August 2022</span>
-                        </div>
-                    </div>
-                    <p class="role">👓 Logistics & Trade Operations Data Analytics Intern</p>
-                    <p class="role-description">Created dashboards and processes to build out the world's first AR/VR supply chain.</p>
-                </div>
-
-                <div class="work-item">
-                    <div class="company-info">
-                        <img src="https://media.licdn.com/dms/image/v2/C560BAQHx_TF3P1nzvg/company-logo_200_200/company-logo_200_200/0/1630602515729/amway_logo?e=1771459200&v=beta&t=PHw1IA7lL1Q1PxlkmmH9zpXntTcaK3JLDmpeGMGRIys" alt="Amway" class="company-logo" onerror="this.src='https://www.google.com/s2/favicons?domain=amway.com&sz=256'">
-                        <div class="company-details">
-                            <h3 class="company-name">Amway</h3>
-                            <span class="time-period">May 2020—August 2021</span>
-                        </div>
-                    </div>
-                    <p class="role">💱 Supply Chain Analyst Intern</p>
-                    <p class="role-description">Designed duty drawback program generating $500K savings and developed delivery optimization reducing costs by 5%.</p>
-                </div>
+    <main>
+        <div class="layout">
+            <section class="intro">
+                <img class="avatar" src="assets/img/about_me.png" alt="Brady Wyniemko">
+                <h1>Brady Wyniemko</h1>
+                <p class="title">Operations Engineer</p>
             </section>
 
-            <section id="projects" class="projects-section">
-                <h2>Projects</h2>
-                <div class="project-item">
-                    <h3><a href="writings/drip-system.html" class="project-link">Automated Drip-Irrigation System</a></h3>
-                    <span class="project-year">2023</span>
-                    <p class="project-description">Self-sustaining irrigation system with soil moisture sensors for campus gardens</p>
-                </div>
+            <p class="tagline">
+                <span class="tagline-main">Systems, processes, and analytics</span>
+                <span class="tagline-sub">for Starship, satellite, and gateway operations</span>
+            </p>
 
-                <div class="project-item">
-                    <h3><a href="https://forecast-accuracy-calculator.bwyniemko.repl.co" target="_blank" class="project-link">Forecast Evaluation Tool</a></h3>
-                    <span class="project-year">2022</span>
-                    <p class="project-description">Interactive calculator for MSE, MAD, and MAPE forecast accuracy metrics</p>
-                </div>
+            <section class="work">
+                <ul>
+                    <li>
+                        <div class="row">
+                            <img src="assets/logos/spacex.svg" alt="SpaceX" width="56" height="56">
+                            <span class="dots"></span>
+                            <span class="role">Operations Engineer II at <strong>SpaceX</strong></span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <img src="assets/logos/spacex.svg" alt="SpaceX" width="56" height="56">
+                            <span class="dots"></span>
+                            <span class="role">Operations Engineer at <strong>SpaceX</strong></span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <img src="assets/logos/spacex.svg" alt="SpaceX" width="56" height="56">
+                            <span class="dots"></span>
+                            <span class="role">Supply Chain Systems Analyst at <strong>SpaceX</strong></span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <img src="assets/logos/amazon.svg" alt="Amazon" width="56" height="56">
+                            <span class="dots"></span>
+                            <span class="role">Technical Project Manager at <strong>Amazon</strong></span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <img src="assets/logos/meta.svg" alt="Meta" width="56" height="56">
+                            <span class="dots"></span>
+                            <span class="role">Logistics &amp; Trade Analytics Intern at <strong>Meta</strong></span>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <img src="assets/logos/amway.svg" alt="Amway" width="56" height="56">
+                            <span class="dots"></span>
+                            <span class="role">Supply Chain Analyst Intern at <strong>Amway</strong></span>
+                        </div>
+                    </li>
+                </ul>
             </section>
-
-            <section id="writing" class="writing-section">
-                <h2>Writings</h2>
-                <div class="writing-item">
-                    <h3><a href="writings/meta.html" class="writing-link">R&D Supply Chain Analytics: My Summer at Meta ↗</a></h3>
-                    <p class="writing-description">Insights from optimizing Meta's R&D supply chain with real-time analytics</p>
-                </div>
-
-                <div class="writing-item">
-                    <h3><a href="https://github.com/wyniemko/amazon-conveyor-tracking" target="_blank" class="writing-link">Amazon Conveyor Belt Monitoring System ↗</a></h3>
-                    <p class="writing-description">Technical deep-dive into automated maintenance inspection systems</p>
-                </div>
-            </section>
-
-            <section class="tech-stack">
-                <h2>Technologies</h2>
-                <div class="tech-icons">
-                    <div class="tech-item">
-                        <img src="https://img.shields.io/badge/Python-3776AB?style=plastic&logo=python&logoColor=white" alt="Python" class="tech-badge">
-                    </div>
-                    <div class="tech-item">
-                        <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=plastic&logo=javascript&logoColor=black" alt="JavaScript" class="tech-badge">
-                    </div>
-                    <div class="tech-item">
-                        <img src="https://img.shields.io/badge/React-61DAFB?style=plastic&logo=react&logoColor=black" alt="React" class="tech-badge">
-                    </div>
-                    <div class="tech-item">
-                        <img src="https://img.shields.io/badge/PostgreSQL-336791?style=plastic&logo=postgresql&logoColor=white" alt="PostgreSQL" class="tech-badge">
-                    </div>
-                    <div class="tech-item">
-                        <img src="https://img.shields.io/badge/Plotly-3F4F75?style=plastic&logo=plotly&logoColor=white" alt="Plotly" class="tech-badge">
-                    </div>
-                    <div class="tech-item">
-                        <img src="https://img.shields.io/badge/Docker-2496ED?style=plastic&logo=docker&logoColor=white" alt="Docker" class="tech-badge">
-                    </div>
-                    <div class="tech-item">
-                        <img src="https://img.shields.io/badge/Dash-0080FF?style=plastic&logo=dash&logoColor=white" alt="Dash" class="tech-badge">
-                    </div>
-                    <div class="tech-item">
-                        <img src="https://img.shields.io/badge/Tableau-E97627?style=plastic&logo=tableau&logoColor=white" alt="Tableau" class="tech-badge">
-                    </div>
-                    <div class="tech-item">
-                        <img src="https://img.shields.io/badge/PowerBI-F2C811?style=plastic&logo=power-bi&logoColor=black" alt="PowerBI" class="tech-badge">
-                    </div>
-                    <div class="tech-item">
-                        <img src="https://img.shields.io/badge/Excel-217346?style=plastic&logo=microsoft-excel&logoColor=white" alt="Excel" class="tech-badge">
-                    </div>
-                </div>
-            </section>
-
-            <footer class="footer">
-                <div class="contact-info">
-                    <a href="#" id="contact-link" class="contact-link">Contact</a>
-                </div>
-            </footer>
-        </main>
-    </div>
-
-    <div id="contact-modal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <h2>Get in touch</h2>
-            <p>Email: <a href="#" class="email" data-email="bwyniemko@gmail.com">[Click to reveal]</a></p>
-            <div class="education-info">
-                <p><strong>Education:</strong> B.S. Industrial Engineering & Supply Chain</p>
-                <p>Purdue University '23 • West Lafayette, IN</p>
-            </div>
-            <div class="certifications">
-                <p><strong>Certifications:</strong> Lean Six Sigma Green Belt, Data Analytics Specialist</p>
-                <p><strong>Languages:</strong> English (Native), Chinese (Working Proficiency)</p>
-            </div>
         </div>
-    </div>
+    </main>
 
-    <script src="script.js"></script>
+    <footer>
+        <nav>
+            <a href="mailto:bwyniemko@gmail.com">Contact</a>
+            <a href="https://www.linkedin.com/in/bradywyniemko/" target="_blank" rel="noreferrer">LinkedIn</a>
+        </nav>
+    </footer>
 </body>
 </html>
